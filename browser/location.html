@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SARA</title>
+</head>
+
+<body>
+  <h1> Location </h1>
+
+  <h2> Location Href </h2>
+  <p id="href"></p>
+  <script>
+    document.getElementById("href").innerHTML = "The URL of this page: " + window.location.href;
+  </script>
+
+  <h2> Location Hostname </h2>
+  <p id="host"></p>
+  <script>
+    document.getElementById("host").innerHTML = "Page hostname: " + window.location.hostname;
+  </script>
+
+  <h2> Location Pathname </h2>
+  <p id="path"></p>
+  <script>
+    document.getElementById("path").innerHTML = "Page path is: " + window.location.pathname;
+  </script>
+
+  <h2> Location Protocol </h2>
+  <p id="prot"></p>
+  <script>
+    document.getElementById("prot").innerHTML = "The page protocol: " + window.location.protocol;
+  </script>
+<body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Send an Email on Form Submission using PHP with PHPMailer</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ </head>
+ <body>
+   <div class="container">
+    <h2> Contact Form </h2>
+   	<form method="POST" action="contactform.php">
+   		<div><label>Your Name:</label></div>
+   		<div><input class="form-control" type="text" name="name" placeholder="Full name"></div>
+      <br>
+      <div><label>Your Email:</label></div>
+   		<div><input class="form-control" type="text" name="email" placeholder="Your e-mail"></div>
+      <br>
+      <div><label>Subject:</label></div>
+      <div><input class="form-control" type="text" name="subject" placeholder="Subject"></div>
+      <br>
+   		<div><label>Message:</label></div>
+   		<div><textarea class="form-control" cols="40" rows="5" name="message" placeholder="Message"></textarea></div>
+      <br>
+      <div class="float-right mt-2">
+   			<button class="btn btn-primary" type="submit" name="submit">SEND</button>
+   		</div>
+   	</form>
+   </div>
+ </body>
+</html>

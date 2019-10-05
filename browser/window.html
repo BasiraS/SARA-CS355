@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SARA</title>
+  </head>
+  <body>
+    <h1> Window </h1>
+
+    <h2> Inner Width </h2>
+    <p id="width"></p>
+
+    <h2> Inner Height </h2>
+    <p id="height"></p>
+    <script>
+      var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+      var h = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+      var x = document.getElementById("width");
+      var y = document.getElementById("height");
+      x.innerHTML = "Browser inner window width: " + w + ".";
+      y.innerHTML = "Browser inner window height: " + h + ".";
+    </script>
+
+  <body>
+</html>
