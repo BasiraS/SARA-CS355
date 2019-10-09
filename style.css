@@ -3,7 +3,7 @@ html, body {
 }
 
 .navbar {
-  background-color: #4682B4 !important;
+  background-color: #8B008B !important;
 }
 
 .navbar .navbar-brand {
@@ -19,12 +19,12 @@ html, body {
 }
 
 .navbar .nav-item .dropdown-menu .dropdown-item {
-  color: #4682B4 !important;
+  color: #8B008B !important;
 }
 
 .navbar .nav-item .dropdown-menu .dropdown-item:hover {
   color: #FFF !important;
-  background-color: #4682B4;
+  background-color: #8B008B;
   opacity: 0.2;
 }
 
@@ -39,8 +39,8 @@ html, body {
 }
 
 .btn-primary {
-  background-color: #4682B4 !important;
-  border-color: #87CEEB;
+  background-color: #8B008B !important;
+  border-color: #00008B;
 }
 
 .card {
