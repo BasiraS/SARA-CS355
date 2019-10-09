@@ -1,9 +1,48 @@
-#backgroundimage {
-  background: url("image3.png");
-  width: 1024px;
-  height: 500px;
-  background-repeat: no-repeat;
-  display: block;
-  position: relative;
-  background-position: 0 500px;
+html, body {
+  background-color: #F8F8F8;
+}
+
+.navbar {
+  background-color: #4682B4 !important;
+}
+
+.navbar .navbar-brand {
+  color: #FFF;
+}
+
+.navbar .navbar-brand:hover {
+  color: #FFF;
+}
+
+.navbar .navbar-nav li a {
+  color: #FFF !important;
+}
+
+.navbar .nav-item .dropdown-menu .dropdown-item {
+  color: #4682B4 !important;
+}
+
+.navbar .nav-item .dropdown-menu .dropdown-item:hover {
+  color: #FFF !important;
+  background-color: #4682B4;
+  opacity: 0.2;
+}
+
+.navbar-toggler {
+  background-color: #FFF;
+}
+
+.row {
+  margin: 5px 5px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+.btn-primary {
+  background-color: #4682B4 !important;
+  border-color: #87CEEB;
+}
+
+.card {
+  height: 95%;
 }

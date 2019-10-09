@@ -1,10 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>SARA</title>
-  </head>
-  <body>
-    <h1> Browser </h1>
+<head>
+  <title>SARA</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="styleBrowser.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">SARA</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <body>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Course
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="https://www.zybooks.com" target="_blank">Zybook</a>
+            <a class="dropdown-item" href="https://tophat.com" target="_blank">TopHat</a>
+            <a class="dropdown-item" href="https://tinyurl.com/CSCI355-Fall2019" target="_blank">Course Google Drive</a>
+            <a class="dropdown-item" href="https://www.w3schools.com" target="_blank">W3Schools</a>
+            <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="https://ssologin.cuny.edu/cuny.html?resource_url=https%3A%2F%2Fbbhosted.cuny.edu%252Fwebapps%252Flogin%252Fnoportal" target="_blank">CUNY Blackboard</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Browser
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="navigator.html">Navigator</a>
+            <a class="dropdown-item" href="window.html">Window</a>
+            <a class="dropdown-item" href="screen.html">Screen</a>
+            <a class="dropdown-item" href="location.html">Location</a>
+            <a class="dropdown-item" href="geolocation.html">Geolocation</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            About
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="../about/developer.html">Developer</a>
+            <a class="dropdown-item" href="../about/contact.html">Contact</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Search
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Phase 2</a>
+            <a class="dropdown-item" href="#">Phase 3</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="title">
+    <h2>Browser</h2>
+    <p>The Browser Object Model (BOM) allows JavaScript to "talk to" the browser.</p>
+  </div>
+  <div class="card border-dark mb-3" style="max-width: 900px;">
+    <div class="card-header">
+      <h5>Navigator</h5>
+      <p> The navigator object contains information about the visitor's browser.</p>
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Application Name</h5>
+      <p class="card-text">It uses the appCodeName property to return the application name of the browser.</p>
+      <h5 class="card-title">Engine</h5>
+      <p class="card-text">It uses the product property to return the product name of the browser engine.</p>
+      <h5 class="card-title">Version</h5>
+      <p class="card-text">It uses the appVersion property to return the version information about the browser.</p>
+      <h5 class="card-title">Agent</h5>
+      <p class="card-text">It uses the userAgent property to return the user-agent header sent by the browser to the server.</p>
+      <h5 class="card-title">Platform</h5>
+      <p class="card-text">It uses the platform property to return the browser platform (operating system).</p>
+      <h5 class="card-title">Language</h5>
+      <p class="card-text">It uses the language property to return the browser's language.</p>
+      <a href="navigator.html" class="btn btn-primary">Take a Look</a>
+    </div>
+  </div>
+  <div class="card border-dark mb-3" style="max-width: 900px;">
+    <div class="card-header">
+      <h5>Window</h5>
+      <p> The window object represents the browser's window.</p>
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Inner Height</h5>
+      <p class="card-text">It uses the innerheight property to represent the height of browser's window (in pixels).</p>
+      <h5 class="card-title">Inner Width</h5>
+      <p class="card-text">It uses the innerwidth property to represent the width of the brower's window (in pixels).</p>
+      <a href="window.html" class="btn btn-primary">Take a Look</a>
+    </div>
+  </div>
+  <div class="card border-dark mb-3" style="max-width: 900px;">
+    <div class="card-header">
+      <h5>Screen</h5>
+      <p> The screen object contains information about the user's screen.</p>
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Width</h5>
+      <p class="card-text">It uses the width property to return the width of the visitor's screen in pixels.</p>
+      <h5 class="card-title">Height</h5>
+      <p class="card-text">It uses the height property to return the height of the visitor's screen in pixels.</p>
+      <h5 class="card-title">Available Width</h5>
+      <p class="card-text">It uses the availWidth property to return the width of the visitor's screen, in pixels, minus interface features like the Windows task bar.</p>
+      <h5 class="card-title">Available Height</h5>
+      <p class="card-text">It uses the availHeight property to return the height of the visitor's screen, in pixels, minus interface features like the Windows task bar.</p>
+      <h5 class="card-title">Color Depth</h5>
+      <p class="card-text">It uses the colorDepth property to return the number of bits used to display one color.</p>
+      <h5 class="card-title">Pixel Depth</h5>
+      <p class="card-text">It uses the pixelDepth property to return the pixel depth of the screen.</p>
+      <a href="screen.html" class="btn btn-primary">Take a Look</a>
+    </div>
+  </div>
+  <div class="card border-dark mb-3" style="max-width: 900px;">
+    <div class="card-header">
+      <h5>Location</h5>
+      <p> The location object contains information about the current page address (URL).</p>
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Href</h5>
+      <p class="card-text">It uses the href property to return the href (URL) of the current page.</p>
+      <h5 class="card-title">Hostname</h5>
+      <p class="card-text">It uses the hostname property to return the domain name of the web host.</p>
+      <h5 class="card-title">Pathname</h5>
+      <p class="card-text">It uses the pathname property to return the path and filename of the current page.</p>
+      <h5 class="card-title">Protocol</h5>
+      <p class="card-text">It uses the protocol property to return the web protocol used (http: or https:).</p>
+      <a href="location.html" class="btn btn-primary">Take a Look</a>
+    </div>
+  </div>
+  <div class="card border-dark mb-3" style="max-width: 900px;">
+    <div class="card-header">
+      <h5>Geolocation</h5>
+      <p> The geolocation object represents a user's position by utlizing the HTML Geolocation API.</p>
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Position</h5>
+      <p class="card-text">It uses the getCurrentPosition method to return the user's position.</p>
+      <h5 class="card-title">Latitude</h5>
+      <p class="card-text">It uses the position.coords.latitude property to represent the latitude of the user's position.</p>
+      <h5 class="card-title">Longitude</h5>
+      <p class="card-text">It uses the position.coords.longitude property to represent the longitude of the user's position.</p>
+      <a href="geolocation.html" class="btn btn-primary">Take a Look</a>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<body>
 </html>

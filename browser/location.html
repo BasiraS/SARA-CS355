@@ -1,36 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>SARA</title>
+  <title>SARA</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="styleBrowser.css">
 </head>
-
 <body>
-  <h1> Location </h1>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">SARA</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <h2> Location Href </h2>
-  <p id="href"></p>
-  <script>
-    document.getElementById("href").innerHTML = "The URL of this page: " + window.location.href;
-  </script>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Course
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="https://www.zybooks.com" target="_blank">Zybook</a>
+            <a class="dropdown-item" href="https://tophat.com" target="_blank">TopHat</a>
+            <a class="dropdown-item" href="https://tinyurl.com/CSCI355-Fall2019" target="_blank">Course Google Drive</a>
+            <a class="dropdown-item" href="https://www.w3schools.com" target="_blank">W3Schools</a>
+            <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="https://ssologin.cuny.edu/cuny.html?resource_url=https%3A%2F%2Fbbhosted.cuny.edu%252Fwebapps%252Flogin%252Fnoportal" target="_blank">CUNY Blackboard</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Browser
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="navigator.html">Navigator</a>
+            <a class="dropdown-item" href="window.html">Window</a>
+            <a class="dropdown-item" href="screen.html">Screen</a>
+            <a class="dropdown-item" href="location.html">Location</a>
+            <a class="dropdown-item" href="geolocation.html">Geolocation</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            About
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="../about/developer.html">Developer</a>
+            <a class="dropdown-item" href="../about/contact.html">Contact</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Search
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Phase 2</a>
+            <a class="dropdown-item" href="#">Phase 3</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="title">
+    <h2> Browser Location Information</h2>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h4> Href </h4>
+      <p id="href"></p>
+      <script>
+        document.getElementById("href").innerHTML = window.location.href;
+      </script>
 
-  <h2> Location Hostname </h2>
-  <p id="host"></p>
-  <script>
-    document.getElementById("host").innerHTML = "Page hostname: " + window.location.hostname;
-  </script>
+      <h4> Hostname </h4>
+      <p id="host"></p>
+      <script>
+        document.getElementById("host").innerHTML = window.location.hostname;
+      </script>
 
-  <h2> Location Pathname </h2>
-  <p id="path"></p>
-  <script>
-    document.getElementById("path").innerHTML = "Page path is: " + window.location.pathname;
-  </script>
+      <h4> Pathname </h4>
+      <p id="path"></p>
+      <script>
+        document.getElementById("path").innerHTML = window.location.pathname;
+      </script>
 
-  <h2> Location Protocol </h2>
-  <p id="prot"></p>
-  <script>
-    document.getElementById("prot").innerHTML = "The page protocol: " + window.location.protocol;
-  </script>
+      <h4> Protocol </h4>
+      <p id="prot"></p>
+      <script>
+        document.getElementById("prot").innerHTML = window.location.protocol;
+      </script>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <body>
 
 </html>

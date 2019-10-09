@@ -1,0 +1,9 @@
+.card {
+  margin: 0 auto;
+  float: none;
+}
+
+.title {
+  margin-top: 20px;
+  text-align: center;
+}
